@@ -1,0 +1,246 @@
+
+/* * {
+    padding: 0;
+    margin: 0;
+}                                                           --- обращение ко всей странице*/
+
+body {
+    background-color: #f1f1f1;
+    color:#0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    
+    /* font: normal 16px 'Times New Roman', Times, serif; */ /*------Рабтает так же как и 3 строки выше (можно писать в 1 строку*/
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color:blue;
+}
+a:visited {
+    color:gray;
+}
+
+.conteiner {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.avatarka   {
+    width: 200px;
+    border-radius: 33px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 100);
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+@media(max-width:700px) {
+    .info{ 
+        display: block;
+        text-align: center;
+    }
+}
+.info-text {
+    margin-left: 40px;
+}
+
+.info h4 {
+    margin-bottom: 5px;
+}
+
+.info h3 {
+    color: #808186;                       /* Цвет */
+    margin: 0;                              /* Маржен отступы */
+    font-style: italic;                     /* Стиль */
+    font-weight:normal;                     /* Жирность */
+    text-decoration: none;                  /* Декорация текста - выкл (обычный текст, без декораций) */
+    
+    /* text-decoration:underline; */        /* Подчёркивание текста */
+    /* text-transform: uppercase; */        /* Всё большими буквами */
+    /* letter-spacing: 5px; */              /* Расстояние между буквами */            
+    /* word-spacing: 42px; */               /* Расстояние между словами */   
+}
+
+/* .social-seti { 
+    background-color: red;
+        padding: 15px;                       ---везде по 15 пикс 
+        padding: 15px, 20px, 25px, 30px;     ---Отступы в 1 строчку
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+
+    border: 5px solid rgb(4, 0, 255);
+    border-bottom-style: dotted;
+    border-top-width: 15px;
+    border-right-color: yellowgreen;
+
+    margin: 5px;
+ } */
+
+/*.box-model > div {
+    background-color: black;
+    height: 200px;
+    width: 25%;
+    float:left;
+    border: 4px solid red;                  ---4 div (бокса) 
+    box-sizing: border-box;                 ---Группирует их в ширину страницы
+} */
+
+.bg-yellow {
+    background-color: #fff9dc;
+}
+
+.bg-green {
+    background-color: #e5ffe7;
+}
+
+.bg-red {
+    background-color: #ffe5e5;
+}
+
+.card {
+    padding: 15px 20px;
+
+    margin-bottom: 20px;
+    border-radius: 33px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.hobbi {
+    padding: 0px 20px;
+}
+
+.hobbi li {
+    color: #86898f;
+    margin-bottom: 5px;
+    /* border-bottom: 1px solid gray;         ---подчеркнуть серым */ 
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 5px;
+}
+
+.table th {
+    text-align: left;
+}
+
+.table td:nth-child(1),
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color:#86898f;
+}
+/* .table th:nth-child(2), --- обращяемся к заголовкам
+.table th:nth-child(3) {
+    color:#86898f;
+} */
+/* .table tr:nth-child(even){ ---выделение чётных/нечётных строк цветом
+    background-color: rgb(247, 205, 224);
+} */
+    
+.list-kurs {
+    list-style:none;
+    padding: 0;
+}
+
+.list-kurs li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact h2{
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input, .form-group textarea {
+    width:  100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;        /*---наследие шрифтра*/ 
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.row > .form-group:last-child{
+   margin-right: 0px;
+}
+
+.knopka {
+    background: #111;
+    padding: 15px 20px;
+    color:#fff;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.knopka:hover{
+    opacity: 0.9;
+}
+
+
+
+/* .posicion {
+    position: relative;
+    border: 5px solid blue;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+} */
+/* .box {   ---кривая меню+фикс кнопка
+    position: fixed;
+    width: 105px;
+    height: 50px;
+    background: rgb(236, 90, 192);
+    border-radius: 25px;  
+    bottom: 5px;
+    right: 28%;
+    
+}
+.box1 {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0px;
+    background: rgba(190, 163, 253, 0.705);
+    margin: 0;
+    border: 5px solid red;
+} */
